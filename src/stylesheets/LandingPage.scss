@@ -1,0 +1,95 @@
+@import '../App.scss';
+.landing-page-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(42, 42, 44);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    width: 50vw;
+    font-size: 7rem;
+    width: 560px;
+    font-weight: 900;
+    font-family: $font-family;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    position: absolute;
+    // top: 50%;
+    // left: 40%;
+    // transform: translate(-40%, -50%);
+    cursor: default;
+    z-index: 500;
+}
+.main-heading-span1 {
+    background-color: rgb(98, 0, 255);
+}
+.main-heading-span2 {
+    -webkit-text-fill-color: transparent;
+    transition: 5s ease-in-out;
+}
+h1:hover .main-heading-span2 {
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+h1:hover .main-heading-span1 {
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+img{
+    width: 100%;
+    // position: absolute;
+    // top: 50%;
+    // left: 70%;
+    // transform: translate(-50%, -60%);
+}
+
+// .landing-page-wrapper img {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     transition: 1s;
+// }
+// .one {
+//     top:15%;
+//     right: 10%;
+//     transform: rotate(-8deg);
+// }
+// .two {
+//     top:60%;
+//     right: 20%;
+//     transform: rotate(15deg);
+// }
+// .three {
+//     top:30%;
+//     left: 15%;
+//     transform: rotate(-15deg);
+// }
+// .four {
+//     bottom: 10%;
+//     left: 20%;
+//     transform: rotate(-35deg);
+// }
+// .five{
+//     top: 5%;
+//     left: 10%;
+//     transform: rotate(35deg);
+// }
+// .six {
+//     top:60%;
+//     left: 30%;
+// }
+// .seven {
+//     bottom:10%;
+//     right: 5%;
+// }
+// .eight {
+//     top: 30%;
+//     left: 50%;
+// }
+// .nine {
+//     top:60%;
+//     left: 5%;
+//     transform: rotate(-15deg);
+// }
