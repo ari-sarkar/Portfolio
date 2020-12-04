@@ -1,0 +1,71 @@
+@import "../App.scss";
+.about-me {
+  font-size: 3em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding-left: 8px;
+}
+.about-me span {
+  background-color: #686bfd;
+  -webkit-text-fill-color: whitesmoke;
+  -webkit-text-stroke-width: 0px;
+}
+.left-right-wrapper {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  width: 40%;
+  height: 80vh;
+//   background-color: rgb(87, 85, 85);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.myName{
+    font-size: 1.8em;
+    color: rgb(155, 151, 151);
+}
+.dob{
+    color: rgb(85, 85, 85);
+    font-size: 1em;
+}
+.my-pic{
+    border-radius: 47% 47% 78% 34% / 45% 43% 41% 69% ;
+    padding: 15px;
+}
+// hover start
+.left-right-wrapper:hover > .about-me{
+    -webkit-text-fill-color: whitesmoke;
+    -webkit-text-stroke-width: 0px;
+}
+.left-right-wrapper:hover > .about-me span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+//hover end
+
+.right {
+    width: 55%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.right p{
+    color: whitesmoke;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-family: 'roboto', sans-serif;
+
+}  

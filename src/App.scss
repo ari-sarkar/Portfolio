@@ -4,8 +4,15 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+$font-family: 'Open Sans', sans-serif;
+$bg-color: rgb(42, 42, 44);
+$color-one: rgb(98, 0, 255);
+body{
+  font-family: $font-family;
+  background-color: $bg-color;
+}
 section {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
- $font-family: 'Open Sans', sans-serif;
