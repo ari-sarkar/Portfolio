@@ -10,7 +10,7 @@
   padding-left: 8px;
 }
 .about-me span {
-  background-color: #686bfd;
+  background-color: $color-one;
   -webkit-text-fill-color: whitesmoke;
   -webkit-text-stroke-width: 0px;
 }
@@ -24,48 +24,52 @@
 }
 .left {
   width: 40%;
-  height: 80vh;
-//   background-color: rgb(87, 85, 85);
+  height: 85vh;
+  //background-color: rgb(87, 85, 85);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.myName{
-    font-size: 1.8em;
-    color: rgb(155, 151, 151);
+.myName {
+  font-size: 1.8em;
+  color: rgb(155, 151, 151);
 }
-.dob{
-    color: rgb(85, 85, 85);
-    font-size: 1em;
+.dob {
+  color: rgb(85, 85, 85);
+  font-size: 1em;
 }
-.my-pic{
-    border-radius: 47% 47% 78% 34% / 45% 43% 41% 69% ;
-    padding: 15px;
+.my-pic {
+  width: 90%;
+  height: auto;
+  align-self: center;
+  border-radius: 47% 47% 78% 34% / 45% 43% 41% 69%;
+  padding: 15px;
+  margin-left: 10px;
+  box-shadow: -1px 10px 12px 0px rgba(2, 0, 0, 0.75);
 }
 // hover start
-.left-right-wrapper:hover > .about-me{
-    -webkit-text-fill-color: whitesmoke;
-    -webkit-text-stroke-width: 0px;
+.left-right-wrapper:hover > .about-me {
+  -webkit-text-fill-color: whitesmoke;
+  -webkit-text-stroke-width: 0px;
 }
-.left-right-wrapper:hover > .about-me span{
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
+.left-right-wrapper:hover > .about-me span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
 }
 //hover end
 
 .right {
-    width: 55%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-.right p{
-    color: whitesmoke;
-    letter-spacing: 2px;
-    padding: 10px;
-    font-family: 'roboto', sans-serif;
-
-}  
+  width: 55%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right p {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  padding: 10px;
+  font-family: "roboto", sans-serif;
+}
