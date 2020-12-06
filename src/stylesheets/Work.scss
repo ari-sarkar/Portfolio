@@ -1,4 +1,8 @@
 @import "../App.scss";
+.Work {
+  width: 100vw;
+  height: auto;
+}
 .mywork-heading {
   font-size: 3em;
   -webkit-text-fill-color: transparent;
@@ -24,6 +28,7 @@
   align-items: center;
   overflow: hidden;
   position: relative;
+  //border: 1px solid wheat;
 }
 //hover start
 .mywork-wrapper:hover .mywork-heading {
@@ -40,7 +45,7 @@
   //background-color: brown;
   overflow: hidden;
 }
-.card-container h4{
+.left-heading{
   position: absolute;
   top: 15%;
   left: 0;
@@ -55,7 +60,7 @@
   height: 60vh;
   margin: 15px;
   //background-color: brown;
-  box-shadow: 7px 7px 19px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.75);
   overflow: hidden;
 }
 .description-container {
@@ -64,9 +69,11 @@
   //background-color: burlywood;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
-  margin-top: 7rem;
+  // padding-left: 8px;
+  margin-left: 5rem;
+  // border-left: 5px solid rgb(255, 255, 255);
 }
 .description-container p{
   color: whitesmoke;
@@ -79,8 +86,8 @@
   text-transform: uppercase;
 }
 .description-container ul li{
-  margin-left: 35px;
-  text-decoration: dotted;
+  margin-left: 5px;
+  margin-top: 5px;
   color: $color-two;
 }
 .description-container a{
@@ -94,7 +101,7 @@
   height: 3rem;
   background-color: transparent;
   padding: 5px;
-  margin: 20px 0px 0px 30px;
+  margin: 15px 0px 0px 5px;
   border-radius: 1px;
   outline: none;
   border: 1px solid rgb(66, 65, 65);
@@ -105,4 +112,26 @@
 .description-container button:hover{
   box-shadow: 0px -1px 13px 0px rgba(0, 0, 0, 0.75);
   border-color: black;
+  //scale: 1;
+}
+.right-heading {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  font-size: 1.4em;
+  color: whitesmoke;
+}
+.CardOutlineTwo {
+  box-shadow:  -5px 4px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.DesContainerTwo {
+  width: 30%;
+  height: 50vh;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
 }

@@ -6,7 +6,7 @@ const LandingPage = () => {
     document.addEventListener("mousemove", paralax);
     function paralax(e) {
       this.querySelectorAll(".layer").forEach(layer => {
-        const speed = layer.getAttribute("dataSpeed");
+        const speed = layer.getAttribute("dataspeed");
 
         const x = (window.innerWidth - e.pageX * speed) / 100;
         const y = (window.innerHeight - e.pageY * speed) / 100;
@@ -49,11 +49,11 @@ const LandingPage = () => {
 	c0,0,2.9-14.7,54.3,53.1"/>
 </svg>
         {/* LLLLLLLLLLLLLLOOOOOOOOOOOOOOOGGGGGGGGGGGGGGGGGOOOOOOOOOOOOOOOOOOOO */}
-      <h1 className="layer" dataSpeed="10">
+      <h1 className="layer" dataspeed="10">
         <span className="main-heading-span1">Front </span>
         <span className="main-heading-span2">End Web Developer</span>
       </h1>
-      <img src={webDev} alt="webDevloper" className="layer" dataSpeed="5"></img>  
+      <img src={webDev} alt="webDevloper" className="layer" dataspeed="5"></img>  
     </section>
   );
 };
