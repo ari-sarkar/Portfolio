@@ -225,6 +225,16 @@ const Projects = () => {
         </div>
       </div>
       {/* MEMORY GAME END */}
+      <div className="projects-layout-container">
+        <div className="projects-layout">
+          <div className="project-initial"><p>To Do<br></br>App</p></div>
+          <div className="project-initial"><p>Vowel<br></br> Counter</p></div>
+          <div className="project-initial"><p>Memory<br></br> Game</p></div>
+          <div className="project-initial"><p>Note <br></br>Taker</p></div>
+          <div className="project-initial"><p>Form <br></br>Verification</p></div>
+          <div className="project-initial"><p>Expense<br></br> Countar</p></div>
+        </div>
+      </div>
     </section>
   );
 };

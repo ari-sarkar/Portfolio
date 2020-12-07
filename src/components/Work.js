@@ -140,6 +140,8 @@ const Work = () => {
             <li>GSAP</li>
             <li>GSAP SCROLL-TRIGGER</li>
             <li>REACT-PLAYER</li>
+            <li>ADOBE ILUSTRATOR</li>
+            <li>PHOTOSHOP</li>
           </ul>
           <button
           ><a href="https://smarthomecareservice.com/" target="#">Visit Page</a>
