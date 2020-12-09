@@ -1,19 +1,4 @@
 @import "../App.scss";
-.about-me {
-  font-size: 3em;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  padding-left: 8px;
-}
-.about-me span {
-  background-color: $color-one;
-  -webkit-text-fill-color: whitesmoke;
-  -webkit-text-stroke-width: 0px;
-}
 .left-right-wrapper {
   width: 80%;
   height: 100vh;
@@ -21,6 +6,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  //background-color: blanchedalmond;
+  position: relative;
+}
+.about-me {
+  font-size: 3em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  padding-left: 8px;
+}
+.about-me span {
+  background-color: $color-one;
+  -webkit-text-fill-color: whitesmoke;
+  -webkit-text-stroke-width: 0px;
 }
 .left {
   width: 40%;

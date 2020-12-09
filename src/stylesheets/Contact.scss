@@ -1,0 +1,145 @@
+@import "../App.scss";
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-wrapper{
+    width: 80vw;
+    height: 85vh;
+    padding-top: 35px;
+    //background-color: turquoise;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.contact-heading {
+    font-size: 3em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding-left: 8px;
+  }
+  .contact-heading span {
+    background-color: $color-one;
+    -webkit-text-fill-color: whitesmoke;
+    -webkit-text-stroke-width: 0px;
+  }
+  .contact-form-wrapper:hover .contact-heading {
+    -webkit-text-fill-color: whitesmoke;
+    -webkit-text-stroke-width: 0px;
+  }
+  .contact-form-wrapper:hover .contact-heading > span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  //////////////////////////
+.contact-form{
+width: 35%;
+height: 85%;
+//background-color: violet;
+border-radius: 0px;
+box-shadow: 7px 7px 20px black,
+            -7px -7px 20px rgb(61, 61, 61);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+}
+.message-me{
+    color: whitesmoke;
+    font-size: 1.3em;
+    width: 90%;
+    height: 2.5rem;
+    text-align: center;
+}
+.contact-form .name, .e-mail{
+    width: 85%;
+    height: 3rem;
+    border-radius: 0px;
+    outline: none;
+    background: none;
+    border: none;
+    box-shadow: inset 8px 8px 8px black,
+                inset -8px -8px 8px rgb(61, 61, 61);
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 1em;
+}
+.message {
+    width: 85%;
+    height: 5rem;
+    border-radius: 0px;
+    outline: none;
+    background: none;
+    border: none;
+    box-shadow: inset 8px 8px 8px black,
+                inset -8px -8px 8px rgb(61, 61, 61);
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 1em;
+}
+.send-botton{
+    width: 100px;
+    height: 2rem;
+    outline: none;
+    font-size: 1em;
+    transition: 0.5s;
+    background-color: transparent;
+    color: whitesmoke;
+    box-shadow: 5px 5px 10px 0px black;
+    //box-shadow: 0px -1px 13px 0px rgba(0, 0, 0, 0.75);
+    border: 1px solid rgb(66, 65, 65);
+}
+.send-botton:hover{
+  cursor: pointer;
+  box-shadow: none;
+  border-color: black;
+  width: 90px;
+  font-size: .9em;
+}
+
+
+
+
+
+.social-media{
+width: 35%;
+height: 85%;
+//background-color: wheat;
+display: flex;
+justify-content: space-around;
+align-items: flex-end;
+}
+.social-media i{
+  color: whitesmoke;
+}
+
+
+// POP UP STYLES
+.popup-content {
+  margin: auto;
+  //background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}

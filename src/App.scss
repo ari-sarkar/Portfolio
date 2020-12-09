@@ -11,6 +11,7 @@ $color-two: #A5DD73;
 body{
   font-family: $font-family;
   background-color: $bg-color;
+  overflow-x: hidden;
 }
 section {
   width: 100vw;
