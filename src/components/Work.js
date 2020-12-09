@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../stylesheets/Work.scss";
 import { motion} from "framer-motion";
 import wrihanshi from "../Media/wrihanshi-capture.png";
 import smart from "../Media/smart.png";
 import grocer from "../Media/grocer.png";
 import uchiha from "../Media/uchiha.png";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const Work = () => {
+  useEffect(()=>{
+    const tl=gsap.timeline({
+      scrollTrigger:{
+        trigger: ".Work",
+        start: "-=500",
+        end: "bottom bottom",
+        markers:{startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20},
+
+      }
+    })
+    tl.fromTo(".mywork-heading",{translateX: 500},{translateX:0, duration:1, ease: "Power2.easeOut"})
+    tl.fromTo(".card-container",{translateX: -900},{translateX:0, duration:1, ease: "Power2.easeOut"})
+    tl.fromTo(".description-container DesContainerTwo",{translateX: 900},{translateX:0, duration:1, ease: "Power2.easeOut"})
+  })
   return (
     <section className="Work">
       {/* --------------------------LEFT card start -------------------------  */}

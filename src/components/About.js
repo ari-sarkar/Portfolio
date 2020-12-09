@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../stylesheets/About.scss";
 import myPic from "../Media/my-pic.jpg";
 import Tilt from "react-tilt";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const About = () => {
+  useEffect(()=>{
+    const tl=gsap.timeline({
+      scrollTrigger:{
+        trigger: ".About-wrapper",
+        start: "-=500",
+        end: "bottom bottom",
+        //markers:{startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20},
+
+      }
+    })
+    tl.fromTo(".about-me",{translateX: 500},{translateX: 0, ease: "Power2.easeOut", duration: 0.8})
+    tl.fromTo(".left",{translateX: -500},{translateX: 0, ease: "Power2.easeOut", duration: 0.8})
+    tl.fromTo(".my-pic",{rotateY: 180,},{rotateY:0, ease: "Power2.easeOut", duration: 0.8})
+    tl.fromTo(".right",{translateX: 900,},{translateX: 0, ease: "Power2.easeOut", duration: 0.8},"-=0.5")
+  })
   return (
     <section className="About-wrapper">
       <div className="left-right-wrapper">

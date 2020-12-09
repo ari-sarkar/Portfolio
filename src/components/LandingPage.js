@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../stylesheets/LandingPage.scss";
 import webDev from "../Media/web-developer.svg";
 import { motion } from "framer-motion";
-import gsap from "gsap";
+import { gsap } from "gsap";
 const LandingPage = () => {
   useEffect(() => {
     document.addEventListener("mousemove", paralax);
@@ -16,9 +16,21 @@ const LandingPage = () => {
         layer.style.transform = `translateX(${x}px) translatey(${y}px)`;
       });
     }
-    const tl=gsap.timeline({});
-    tl.fromTo("#frontEndDevText",{translateX: -1000},{translateX:0, 
-      ease: "Power1.easeOut"})
+    const tl = gsap.timeline({});
+    tl.fromTo(
+      "#frontEndDevText",
+      { translateX: -1000 },
+      { translateX: 0, ease: "Power1.easeOut", duration: 1 }
+    ).fromTo(
+      "#frontEndDevImg",
+      { translateX: 1000 },
+      { translateX: 0, ease: "Power1.easeOut", duration: 1 },
+      "-=0.9"
+    )
+    .to(
+      ".hire-me",
+      { autoAlpha: 1, duration: 1},
+    );
   }, []);
   const icon = {
     hidden: {
@@ -188,7 +200,14 @@ const LandingPage = () => {
         <span className="main-heading-span1">Front </span>
         <span className="main-heading-span2">End Web Developer</span>
       </h1>
-      <img id="frontEndDevImg" src={webDev} alt="webDevloper" className="layer" dataspeed="5"></img>
+      <img
+        id="frontEndDevImg"
+        src={webDev}
+        alt="webDevloper"
+        className="layer"
+        dataspeed="5"
+      ></img>
+      <p className="hire-me">Hire Me</p>
     </section>
   );
 };

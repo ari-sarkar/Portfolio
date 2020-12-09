@@ -41,12 +41,13 @@
 .card-container {
   width: 65%;
   height: 65vh;
+  padding-top: 15px;
   //background-color: brown;
   overflow: hidden;
 }
 .left-heading{
   position: absolute;
-  top: 15%;
+  top: 0%;
   left: 0;
   font-size: 1.4em;
   color: whitesmoke;
@@ -121,7 +122,7 @@
 .right-heading {
   position: absolute;
   right: 0;
-  top: 15%;
+  top: 0%;
   font-size: 1.4em;
   color: whitesmoke;
 }
