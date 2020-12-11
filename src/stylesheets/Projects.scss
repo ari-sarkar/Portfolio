@@ -22,22 +22,21 @@
     opacity: 1;
     transition: opacity 1s ease;
   }
-
+  .project-wrapper {
+    width: 400px;
+    height: 250px;
+    //background-color: wheat;
+    margin: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+   // box-shadow: 0px 0px 10px 2px black;
+    visibility: hidden;
+  }
 ///////////////////////////////////////////////
-
-.project-wrapper {
-  width: 400px;
-  height: 250px;
-  //background-color: wheat;
-  margin: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
- // box-shadow: 0px 0px 10px 2px black;
-  visibility: hidden;
-}
+//////////////////////////////////////////////////
 .projects-layout-container {
   width: 100vw;
   height: 100vh;
@@ -72,10 +71,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 12;
 }
 .project-initial:hover{
   box-shadow: none;
-  cursor: pointer;
+  z-index: 500;
+  cursor: url(../Media/cursor2.png), auto;
   opacity: 1;
 }
 .project-initial:hover p{
@@ -108,3 +109,180 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
+
+//JS Projects
+//*****************************************************************************//
+//////////////////////////BACK BTN SVG
+.svg-icon {
+  width: 3em;
+  height: 4em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffffff;
+}
+
+.svg-icon circle {
+  stroke: #ffffff;
+  stroke-width: 1;
+}
+//////////////////////////BACK BTN SVG END
+.projects-wrapper{
+  width: 100vw;
+  height: 100vh;
+ // background-color: whitesmoke;
+ //filter: blur(5px);
+ // opacity: 1;
+  position: absolute;
+  top: 0%;
+  z-index: 10;
+  left: 0;
+  visibility: visible;
+}
+.projects-wrapper-hide{
+visibility: hidden;
+z-index: -10;
+}
+.projects-wrapper::after{
+  content: " ";
+  background-color: rgb(42, 42, 44,0.75);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(5px);
+  z-index: -5;
+}
+//{count === 0 ? "to-do-wrapper-hide": "to-do-wrapper"}
+.back-btn{
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  cursor: pointer;
+}
+////////////////////////////////////////////////TO DO APP START////////////////////
+.Contanier-jsProjects {
+  width: 70vw;
+  height: 100%;
+  margin: auto;
+  background-color: rgb(70, 69, 69);
+  text-align: center;
+}
+.Contanier-jsProjects h6{
+  color: whitesmoke;
+  font-size: 2em;
+  margin-top: 1rem;
+}
+.Contanier-jsProjects .input{
+  margin-top: 5rem;
+  width: 60%;
+  height: 3rem;
+  box-shadow: -7px -7px 7px black;
+  border: none;
+  outline: none;
+  font-size: 1.3em;
+  padding: 8px;
+  //background-color: transparent;
+}
+.Contanier-jsProjects .button{
+  height: 3rem;
+  width: 5rem;
+  margin-left: 15px;
+  box-shadow: -7px -7px 7px black;
+  font-size: 1em;
+}
+.Contanier-jsProjects .unorderList {
+  //background-color: yellow;
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+}
+.Contanier-jsProjects .unorderList li{
+  width: 100%;
+  height: 2rem;
+  background-color: rgb(51, 50, 50);
+  //border-bottom: 2px solid whitesmoke;
+  //padding: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: left;
+  overflow: hidden;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.btn-del {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(211, 0, 0);
+  outline: none;
+  border: none;
+}
+.btn-del::after{
+  content: "Del";
+  color: whitesmoke;
+  font-weight: 800;
+}
+////////////////////////////////////////////////TO DO APP END////////////////////
+////////////////////////////////////////////////Vowel Counter Start////////////////////
+#input{
+  margin-top: 5rem;
+  width: 60%;
+  height: 3rem;
+  font-size: 0.8em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  outline: none;
+}
+#button{
+  height: 3rem;
+  font-size: 1em;
+}
+#output{
+  color: $color-two;
+  font-size: 1.2em;
+  margin-top: 5rem;
+}
+////////////////////////////////////////////////Vowel Counter End////////////////////
+////////////////////////////////////////////////Memory Game Start////////////////////
+.game-Wrapper {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  //background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 20px;
+}
+.image {
+  width: 150px;
+  height: 150px;
+}
+.img-overlay-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  background-color: $color-one;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 500;
+  opacity: 1;
+  transition: 1s ease;
+}
+////////////////////////////////////////////////Memory Game End////////////////////

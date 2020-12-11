@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .contact-form-wrapper{
     width: 80vw;
@@ -13,6 +14,7 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 .contact-heading {
     font-size: 3em;
@@ -50,6 +52,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
+overflow: hidden;
 
 }
 .message-me{
@@ -70,7 +73,20 @@ align-items: center;
                 inset -8px -8px 8px rgb(61, 61, 61);
     color: whitesmoke;
     padding: 10px;
-    font-size: 1em;
+    font-size: 1em; 
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid transparent;
+  -webkit-text-fill-color: whitesmoke;
+  transition: background-color 5000s ease-in-out 0s;
 }
 .message {
     width: 85%;
@@ -93,16 +109,14 @@ align-items: center;
     transition: 0.5s;
     background-color: transparent;
     color: whitesmoke;
-    box-shadow: 5px 5px 10px 0px black;
+    //box-shadow: 5px 5px 10px 0px black;
     //box-shadow: 0px -1px 13px 0px rgba(0, 0, 0, 0.75);
-    border: 1px solid rgb(66, 65, 65);
+    border: 1px solid $btn-border;
 }
 .send-botton:hover{
-  cursor: pointer;
-  box-shadow: none;
-  border-color: black;
-  width: 90px;
-  font-size: .9em;
+  cursor: url(../Media/cursor.png);
+  box-shadow: 0px -1px 13px 0px rgba(0, 0, 0);
+ border-color: black;
 }
 
 
@@ -116,12 +130,11 @@ height: 85%;
 display: flex;
 justify-content: space-around;
 align-items: flex-end;
+overflow: hidden;
 }
 .social-media i{
   color: whitesmoke;
 }
-
-
 // POP UP STYLES
 .popup-content {
   margin: auto;

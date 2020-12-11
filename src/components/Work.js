@@ -10,18 +10,68 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const Work = () => {
   useEffect(()=>{
-    const tl=gsap.timeline({
+    const tl1=gsap.timeline({
       scrollTrigger:{
         trigger: ".Work",
         start: "-=500",
         end: "bottom bottom",
-        markers:{startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20},
-
+        //markers:{startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20},
+        //scrub: 1,
+       // pin: true,
       }
     })
-    tl.fromTo(".mywork-heading",{translateX: 500},{translateX:0, duration:1, ease: "Power2.easeOut"})
-    tl.fromTo(".card-container",{translateX: -900},{translateX:0, duration:1, ease: "Power2.easeOut"})
-    tl.fromTo(".description-container DesContainerTwo",{translateX: 900},{translateX:0, duration:1, ease: "Power2.easeOut"})
+    const tl2=gsap.timeline({
+      scrollTrigger:{
+        trigger: "#card2",
+        start: "-=500",
+        end: "bottom bottom",
+        //markers:{startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20},
+       // scrub: 1,
+        //pin: true,
+      }
+    })
+    const tl3=gsap.timeline({
+      scrollTrigger:{
+        trigger: "#card3",
+        start: "-=500",
+        end: "bottom bottom",
+        //markers:{startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20},
+        //scrub: 1,
+        //pin: true,
+      }
+    })
+    const tl4=gsap.timeline({
+      scrollTrigger:{
+        trigger: "#card4",
+        start: "-=500",
+        end: "bottom bottom",
+        //markers:{startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20},
+        //scrub: 1,
+        //pin: true,
+      }
+    })
+    tl1.fromTo(".mywork-heading",{translateX: 500},{translateX:0, duration:  1, ease: "Power2.easeOut"})
+    //  CAED 1
+    tl1.fromTo("#card1",{translateX: -900},{translateX:0, duration:  1, ease: "Power2.easeOut"})
+    tl1.fromTo(".card-image-overlay1",{width: "100%"},{width: "0%", duration:  1, ease: "Power2.easeOut"})
+    tl1.fromTo("#des1",{translateX: 900},{translateX:0, duration:  1, ease: "Power2.easeOut"}, "-=0.8")
+    //  CAED 1 END
+    //  CAED 2 
+    tl2.fromTo("#card2",{translateX: 900},{translateX:0, duration:  1, ease: "Power2.easeOut"})
+    tl2.fromTo(".card-image-overlay2",{width: "100%"},{width: "0%", duration:  1, ease: "Power2.easeOut"})
+    tl2.fromTo("#des2",{translateX: -900},{translateX:0, duration:  1, ease: "Power2.easeOut"}, "-=0.8")
+    //  CAED 2 END
+    //  CAED 3
+    tl3.fromTo("#card3",{translateX: -900},{translateX:0, duration:  1, ease: "Power2.easeOut"})
+    tl3.fromTo(".card-image-overlay3",{width: "100%"},{width: "0%", duration:  1, ease: "Power2.easeOut"})
+    tl3.fromTo("#des3",{translateX: 900},{translateX:0, duration:  1, ease: "Power2.easeOut"}, "-=0.8")
+    //  CAED 3 END
+    //  CAED 4
+    tl4.fromTo("#card4",{translateX: 900},{translateX:0, duration:  1, ease: "Power2.easeOut"})
+    tl4.fromTo(".card-image-overlay4",{width: "100%"},{width: "0%", duration:  1, ease: "Power2.easeOut"})
+    tl4.fromTo("#des4",{translateX: -900},{translateX:0, duration:  1, ease: "Power2.easeOut"}, "-=0.8")
+    //  CAED 4 END
+    
   })
   return (
     <section className="Work">
@@ -30,7 +80,7 @@ const Work = () => {
         <h2 className="mywork-heading">
           My <span>Works</span>
         </h2>
-        <div className="card-container">
+        <div className="card-container" id="card1">
           <div className="card-outline">
             <motion.img src={wrihanshi} className="wrihanshi" alt="wrihanshi"
             animate={{translateY:
@@ -46,10 +96,11 @@ const Work = () => {
               //   console.log("dada")
               // }}
             ></motion.img>
+            <div className="card-image-overlay1"></div>
           </div>
           <h4 className="left-heading">The Wrihanshi Foundation</h4>
         </div>
-        <div className="description-container">
+        <div className="description-container" id="des1">
           <p>N.G.O in my town.
           </p>
           <p>Skills used :</p>
@@ -69,7 +120,7 @@ const Work = () => {
 
        {/* --------------------------RIGHT card start-------------------------  */}
        <div className="mywork-wrapper">
-        <div className="description-container DesContainerTwo">
+        <div className="description-container DesContainerTwo" id="des2">
           <p>Business Website about Product Servicing.
           </p>
           <p>Skills used :</p>
@@ -80,7 +131,7 @@ const Work = () => {
           ><a href="https://smarthomecareservice.com/" target="#">Visit Page</a>
           </button>
         </div>
-        <div className="card-container">
+        <div className="card-container" id="card2">
           <div className="card-outline CardOutlineTwo">
             <motion.img src={smart} className="wrihanshi" alt="smart"
             animate={{translateY:
@@ -96,6 +147,7 @@ const Work = () => {
               //   console.log("dada")
               // }}
             ></motion.img>
+            <div className="card-image-overlay2"></div>
           </div>
           <h4 className="right-heading">Smart Home Care Service</h4>
         </div>
@@ -106,7 +158,7 @@ const Work = () => {
 
       {/* --------------------------LEFT card start-------------------------  */}
       <div className="mywork-wrapper">
-        <div className="card-container">
+        <div className="card-container" id="card3">
           <div className="card-outline CardOutlineThree">
             <motion.img src={grocer} className="grocer" alt="grocer"
             animate={{translateY:
@@ -122,10 +174,11 @@ const Work = () => {
               //   console.log("dada")
               // }}
             ></motion.img>
+            <div className="card-image-overlay3"></div>
           </div>
           <h4 className="left-heading">Grocer</h4>
         </div>
-        <div className="description-container DesContainerThree">
+        <div className="description-container DesContainerThree"  id="des3">
           <p>E-commerce Website
           </p>
           <p>Skills used :</p>
@@ -146,7 +199,7 @@ const Work = () => {
 
        {/* --------------------------RIGHT card start-------------------------  */}
        <div className="mywork-wrapper">
-        <div className="description-container DesContainerTwo">
+        <div className="description-container DesContainerTwo"  id="des4">
           <p>Reveal Animation on Scroll
           </p>
           <p>Skills used :</p>
@@ -164,7 +217,7 @@ const Work = () => {
           ><a href="https://smarthomecareservice.com/" target="#">Visit Page</a>
           </button>
         </div>
-        <div className="card-container">
+        <div className="card-container" id="card4">
           <div className="card-outline CardOutlineTwo">
             <motion.img src={uchiha} className="uchiha" alt="uchiha"
             animate={{translateY:
@@ -180,6 +233,7 @@ const Work = () => {
               //   console.log("dada")
               // }}
             ></motion.img>
+            <div className="card-image-overlay4"></div>
           </div>
           <h4 className="right-heading">The Uchiha Clan</h4>
         </div>
