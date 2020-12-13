@@ -1,47 +1,11 @@
 @import "../App.scss";
-.image {
-    width: 10px;
-    height: 10px;
-  }
-  .imageWrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-  }
-  .blackContainer {
-    position: relative;
-  }
-  .black {
-    position: absolute;
-    background-color: black;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 150px;
-    cursor: pointer;
-    z-index: 500;
-    opacity: 1;
-    transition: opacity 1s ease;
-  }
-  .project-wrapper {
-    width: 400px;
-    height: 250px;
-    //background-color: wheat;
-    margin: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-   // box-shadow: 0px 0px 10px 2px black;
-    visibility: hidden;
-  }
-///////////////////////////////////////////////
-//////////////////////////////////////////////////
 .projects-layout-container {
   width: 100vw;
   height: 100vh;
   //background-color: rgb(73, 73, 72);
   position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
 }
 .projects-layout {
   width: 80vw;
@@ -57,6 +21,8 @@
   align-items: center;
   padding-bottom: 18px;
   padding-right: 18px;
+  padding-left: 10px;
+  overflow: hidden;
 }
 .project-initial {
   width: 100%;
@@ -72,6 +38,7 @@
   flex-direction: column;
   justify-content: center;
   z-index: 12;
+  overflow: hidden;
 }
 .project-initial:hover{
   box-shadow: none;
@@ -135,7 +102,7 @@
  // background-color: whitesmoke;
  //filter: blur(5px);
  // opacity: 1;
-  position: absolute;
+  position: fixed;
   top: 0%;
   z-index: 10;
   left: 0;
@@ -286,3 +253,97 @@ z-index: -10;
   transition: 1s ease;
 }
 ////////////////////////////////////////////////Memory Game End////////////////////
+////////////////////////////////////////////////Note Taker App Start////////////////////
+.note {
+  color: $color-two;
+  font-size: 1.5em;
+  padding-right: 15px;
+}
+#input-note-taker {
+  margin-top: 5rem;
+  width: 60%;
+  height: 2.5rem;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+#button-note-taker{
+  height: 3.5rem;
+  width: 100px;
+  outline: none;
+  border: 2px solid rgb(114, 114, 114);
+  cursor: pointer;
+}
+.displayNotes {
+  //background-color: #ffffff;
+  width: 70%;
+  margin: auto;
+  text-align: left;
+  margin-top: 35px;
+  line-height: 2rem;
+  color: $color-two;
+}
+////////////////////////////////////////////////Note Taker App End////////////////////
+////////////////////////////////////////////////Form Verficitaion////////////////////
+#form{
+  background-color: #ffffff;
+  width: 40%;
+  height: 30rem;
+  margin: auto;
+  margin-top: 5rem;
+  text-align: left;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+}
+#form input{
+  width: 100%;
+  line-height: 2rem;
+  color: black;
+}
+#submit{
+  line-height: 2rem;
+  font-size: 1em;
+  cursor: pointer;
+}
+////////////////////////////////////////////////Form Verficitaion End////////////////////
+////////////////////////////////////////////////Expense Tracker////////////////////
+.expense-form{
+  background-color: rgb(184, 181, 181);
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+}
+.expense-form label{
+  margin-top: 15px;
+}
+.expense-form input{
+  width: 100%;
+  line-height: 2rem;
+}
+#button-expense{
+  width: 100px;
+  line-height: 2rem;
+  font-size: 1em;
+}
+#myTable {
+  background-color: whitesmoke;
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+#myTable tr{
+  border: 1px solid black;
+  line-height: 1.5rem;
+  background-color: rgb(145, 145, 145);
+}
+////////////////////////////////////////////////Expense Tracker End////////////////////

@@ -68,6 +68,7 @@ const Contact = () => {
           <input
             className="name"
             placeholder="Full Name"
+            type="text"
             onChange={() => SetCount(count + 1)}
             name="name"
             required
@@ -76,6 +77,7 @@ const Contact = () => {
             className="e-mail"
             placeholder="E-Mail"
             name="e-mail"
+            type="email"
             onChange={() => SetCount1(count1 + 1)}
             required
           ></input>
