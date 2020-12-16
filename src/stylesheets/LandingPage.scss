@@ -8,18 +8,21 @@
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
+  position: relative;
 }
-.logo {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  color: #ffffff;
-  font-family: $font-family;
-  font-size: 2em;
-}
+// .logo {
+//   position: absolute;
+//   top: 5%;
+//   left: 5%;
+//   color: #ffffff;
+//   font-family: $font-family;
+//   font-size: 2em;
+// }
 h1 {
   width: 50vw;
-  font-size: 7rem;
+  //font-size: 7rem;
+  //font-size: calc(15px + 7vw);
+  font-size: 7em;
   width: 560px;
   font-weight: 900;
   font-family: $font-family;
@@ -36,7 +39,7 @@ h1 {
 }
 .main-heading-span2 {
   -webkit-text-fill-color: transparent;
-  transition: 5s ease-in-out;
+  //transition: 5s ease-in-out;
 }
 h1:hover .main-heading-span2 {
   -webkit-text-fill-color: rgb(255, 255, 255);
@@ -44,7 +47,7 @@ h1:hover .main-heading-span2 {
 h1:hover .main-heading-span1 {
   -webkit-text-stroke-color: rgb(0, 0, 0);
 }
-img {
+#frontEndDevImg {
   width: 100%;
 }
 .st0 {
@@ -75,4 +78,34 @@ img {
   border-color: whitesmoke;
   cursor: pointer;
   box-shadow: 3px 4px 10px black;
+}
+
+@media (max-width:768px) {
+  h1 {
+    //width: 50vw;
+    //font-size: 7rem;
+    //font-size: calc(15px + 7vw);
+    font-size: 4em;
+    width: 400px;
+    font-weight: 900;
+    font-family: $font-family;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 2.5%;
+    top: 30%;
+    z-index: 500;
+  }
+  .hire-me {
+    // position: absolute;
+    // right: 5%;
+    top: 15%;
+    // color: whitesmoke;
+    // font-family: "roboto", sans-serif;
+    // border: 1px solid $btn-border;
+    // padding: 15px;
+    // transition: 0.5s;
+    // visibility: hidden;
+  }
 }

@@ -1,0 +1,68 @@
+@import "../App.scss";
+.header {
+  //background-color: aqua;
+  position: fixed;
+  top: 0%;
+  //bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 500px;
+  height: 15%;
+  z-index: 10;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.navigation-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  //background-color: rgb(102, 101, 101);
+  overflow: hidden;
+  position: relative;
+}
+.navigation-wrapper a {
+  width: 100px;
+  height: 60px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "roboto", sans-serif;
+  line-height: 5rem;
+  //background-color: rgb(51, 16, 16);
+  padding: 5px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(70, 68, 68);
+  transition: 0.5s ease-in-out;
+}
+.navigation-wrapper a:hover {
+  border-color: $color-two;
+}
+.navigation-wrapper a:active {
+  text-decoration: line-through;
+}
+.svg-icon {
+  width: 5em;
+  height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: $color-one;
+}
+
+.svg-icon circle {
+  stroke: $color-one;
+  stroke-width: 2;
+}
+.right-arrow {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 40px;
+  visibility: visible;
+  cursor: pointer;
+  //transform: rotate(90deg);
+}

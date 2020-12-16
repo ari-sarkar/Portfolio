@@ -13,6 +13,7 @@ body{
   font-family: $font-family;
   background-color: $bg-color;
   overflow-x: hidden;
+  position: relative;
 }
 section {
   width: 100vw;

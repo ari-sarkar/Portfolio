@@ -3,6 +3,7 @@ import "../stylesheets/LandingPage.scss";
 import webDev from "../Media/web-developer.svg";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
+import Navigation from "../components/Navigation";
 const LandingPage = () => {
   useEffect(() => {
     document.addEventListener("mousemove", paralax);
@@ -21,16 +22,14 @@ const LandingPage = () => {
       "#frontEndDevText",
       { translateX: -1000 },
       { translateX: 0, ease: "Power1.easeOut", duration: 1 }
-    ).fromTo(
-      "#frontEndDevImg",
-      { translateX: 1000 },
-      { translateX: 0, ease: "Power1.easeOut", duration: 1 },
-      "-=0.9"
     )
-    .to(
-      ".hire-me",
-      { autoAlpha: 1, duration: 1},
-    );
+      .fromTo(
+        "#frontEndDevImg",
+        { translateX: 1000 },
+        { translateX: 0, ease: "Power1.easeOut", duration: 1 },
+        "-=0.9"
+      )
+      .to(".hire-me", { autoAlpha: 1, duration: 1 });
   }, []);
   const icon = {
     hidden: {
@@ -44,6 +43,7 @@ const LandingPage = () => {
   };
   return (
     <section className="landing-page-wrapper">
+      <Navigation />
       {/* LLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOGGGGGGGGGGGGGGGGGOOOOOOOOOOOOOOOOOO */}
       <svg
         version="1.1"

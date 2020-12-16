@@ -25,7 +25,7 @@ const Projects = props => {
     tlvsvs.fromTo(
       ".project-initial",
       { autoAlpha: 0 },
-      { autoAlpha: 1, stagger: 0.1 }
+      { autoAlpha: 1, stagger: 0.5 }
     );
   }, []);
   // ********************************************************************

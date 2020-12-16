@@ -11,7 +11,7 @@ const JSHeading=() =>{
                 start: "-=100",
                 end: "bottom bottom",
                // markers:{startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20},
-                scrub: 8,
+                scrub: 1,
                 pin: true,
                 //toggleActions: "play pause reverse reverse",
               } 

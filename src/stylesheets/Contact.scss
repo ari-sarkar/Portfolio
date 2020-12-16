@@ -156,3 +156,30 @@ overflow: hidden;
 [data-popup='tooltip'].popup-overlay {
   background: transparent;
 }
+
+@media (max-width: 768px){
+  .contact-form-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form{
+  width: 80%;
+  height: 70%;
+  margin-top: 3rem;
+  }
+  .social-media{
+    width: 100%;
+    margin-top: 0rem;
+    height: 10%;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    overflow: hidden;
+    }
+    .contact-heading{
+      right: 5%;
+    }
+}

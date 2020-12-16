@@ -19,7 +19,7 @@ const About = () => {
     tl.fromTo(".about-me",{translateX: 500},{translateX: 0, ease: "Power2.easeOut", duration: 0.8})
     tl.fromTo(".left",{translateX: -500},{translateX: 0, ease: "Power2.easeOut", duration: 0.8})
     tl.fromTo(".my-pic",{rotateY: 180,},{rotateY:0, ease: "Power2.easeOut", duration: 0.8})
-    tl.fromTo(".right",{translateX: 900,},{translateX: 0, ease: "Power2.easeOut", duration: 0.8},"-=0.5")
+    tl.fromTo(".right p",{translateX: 900,},{translateX: 0, stagger: 1 ,ease: "Power2.easeOut", duration: 0.8},"-=0.5")
   })
   return (
     <section className="About-wrapper">
@@ -44,17 +44,17 @@ const About = () => {
         </div>
         <div className="right">
           <p>
-            I am a Front End Web Developer looking for a Job where I can grow my
+            &nbsp;&nbsp; I am a Front End Web Developer looking for a Job where I can grow my
             skills to be able to call myself a professional developer.
           </p>
           <p>
-            I am very passionate about my work.I strive to produce quality work
+          &nbsp;&nbsp;I am very passionate about my work.I strive to produce quality work
             to the best of my ability.
           </p>
           <p>
-            I am continuously imporving my skills and love learning new things.
+          &nbsp;&nbsp;I am continuously imporving my skills and love learning new things.
           </p>
-          <p style={{ color: "red" }}>
+          <p style={{ color: "#A5DD73", fontWeight: "bold", marginLeft: 20 }}>
             In coming future I want to be a FullStack Developer.
           </p>
         </div>
