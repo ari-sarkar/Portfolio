@@ -53,9 +53,9 @@ const Navigation = () => {
       >
         <Link smooth to="#about-me"  style={{textDecoration: 'none'}}><a href="./">About Me</a></Link>
         
-        <a href="#">Work</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="./">Work</a>
+        <a href="./">Projects</a>
+        <a href="./">Contact</a>
       </div>
       <svg
         className="right-arrow"
