@@ -1,6 +1,7 @@
 @import "../App.scss";
 .Work {
-  width: 100vw;
+  width: 80%;
+  margin: auto;
   height: auto;
 }
 .mywork-heading {
@@ -19,8 +20,8 @@
   -webkit-text-stroke-width: 0px;
 }
 .mywork-wrapper {
-  width: 80%;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   //background-color: rgb(95, 92, 92);
   margin: auto;
   margin-top: 5px;
@@ -47,7 +48,7 @@
   overflow: hidden;
   position: relative;
 }
-.left-heading{
+.left-heading {
   position: absolute;
   top: 0%;
   left: 0;
@@ -66,7 +67,9 @@
   overflow: hidden;
   position: relative;
 }
-.wrihanshi, .grocer, .uchiha {
+.wrihanshi,
+.grocer,
+.uchiha {
   width: 100%;
 }
 .description-container {
@@ -82,26 +85,26 @@
   // border-left: 5px solid rgb(255, 255, 255);
   overflow: hidden;
 }
-.description-container p{
+.description-container p {
   color: whitesmoke;
-  font-family: "roboto",sans-serif;
+  font-family: "roboto", sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
   padding: 5px;
   overflow: hidden;
 }
-.description-container p:nth-child(1){
+.description-container p:nth-child(1) {
   text-transform: uppercase;
 }
-.description-container ul{
+.description-container ul {
   overflow: hidden;
 }
-.description-container ul li{
+.description-container ul li {
   margin-left: 5px;
   margin-top: 5px;
   color: $color-two;
 }
-.description-container a{
+.description-container a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.3em;
@@ -120,7 +123,7 @@
   transition: 0.5s;
   cursor: pointer;
 }
-.description-container button:hover{
+.description-container button:hover {
   box-shadow: 0px -1px 13px 0px rgba(0, 0, 0, 0.75);
   border-color: black;
   //scale: 1;
@@ -133,7 +136,7 @@
   color: whitesmoke;
 }
 .CardOutlineTwo {
-  box-shadow:  -5px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 4px 10px 0px rgba(0, 0, 0, 0.75);
 }
 .DesContainerTwo {
   width: 30%;
@@ -146,7 +149,10 @@
   margin-top: 7rem;
   margin-bottom: 5rem;
 }
-.card-image-overlay1, .card-image-overlay2, .card-image-overlay3,.card-image-overlay4{
+.card-image-overlay1,
+.card-image-overlay2,
+.card-image-overlay3,
+.card-image-overlay4 {
   width: 100%;
   height: 100%;
   background-color: whitesmoke;
@@ -156,55 +162,92 @@
   left: 0;
 }
 
-@media (max-width:768px){
-  .mywork-wrapper{
-    width: 100vw;
+@media (max-width: 768px) {
+  .Work {
+    height: 100%;
+    //background-color: antiquewhite;
+
+  }
+  #wrihanshi-foundation {
+    width: 100%;
+    height: 70vh;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mywork-wrapper {
+    width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+  }
+  #right-card {
+    display: flex;
+    flex-direction: column-reverse;
   }
   .card-container {
-    width: 100vw;
-    height: 40vh;
-    padding-top: 15px;
-    //background-color: brown;
-    overflow: hidden;
-    position: relative;
+    width: 100%;
+    height: 55vh;
   }
   .description-container {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 55vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
     //background-color: burlywood;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: flex-start;
-     margin-left: 0px;
-    // // border-left: 5px solid rgb(255, 255, 255);
-    // overflow: hidden;
+     font-size: 15px;
   }
-  // #card1{
-  //   padding-top: 5rem;
-  // }
-  // .card-outline {
-  //   width: 100%;
-  //   height: 40vh;
-  // }
-  .left-heading{
+  .DesContainerTwo {
+    width: 100%;
+    height: 65vh;
+    align-items: flex-start;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  #des4 {
+    margin-right: 3.2rem;
+  }
+  .description-container ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    font-size: 10px;
+  }
+  .left-heading {
     font-size: 1em;
     padding-left: 10px;
   }
-  .right-heading{
+  .right-heading {
     font-size: 1em;
     padding-right: 10px;
   }
-  .mywork-heading{
+  .mywork-heading {
     right: 5%;
   }
-  .wrihanshi, .grocer, .uchiha {
-    width: 70%;
-    height: 300%;
+  #card-outline1 {
+    background-image: url(../Media/wrihanshi-capture.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+  #card-outline2 {
+    background-image: url(../Media/smart.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+  #card-outline3 {
+    background-image: url(../Media/grocer.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+  #card-outline4 {
+    background-image: url(../Media/uchiha.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
   }
 }

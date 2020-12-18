@@ -76,12 +76,12 @@ const Work = () => {
   return (
     <section className="Work" id="work">
       {/* --------------------------LEFT card start -------------------------  */}
-      <div className="mywork-wrapper">
-        <h2 className="mywork-heading">
+      <h2 className="mywork-heading">
           My <span>Works</span>
         </h2>
+      <div className="mywork-wrapper" id="wrihanshi-foundation">
         <div className="card-container" id="card1">
-          <div className="card-outline">
+          <div className="card-outline" id="card-outline1">
             <motion.img src={wrihanshi} className="wrihanshi" alt="wrihanshi"
             animate={{translateY:
               [1, -500, -1000, -1450, 1]}}
@@ -119,7 +119,7 @@ const Work = () => {
 
 
        {/* --------------------------RIGHT card start-------------------------  */}
-       <div className="mywork-wrapper">
+       <div className="mywork-wrapper" id="right-card">
         <div className="description-container DesContainerTwo" id="des2">
           <p>Business Website about Product Servicing.
           </p>
@@ -132,7 +132,7 @@ const Work = () => {
           </button>
         </div>
         <div className="card-container" id="card2">
-          <div className="card-outline CardOutlineTwo">
+          <div className="card-outline CardOutlineTwo"  id="card-outline2">
             <motion.img src={smart} className="wrihanshi" alt="smart"
             animate={{translateY:
               [1, -320, -700, 1]}}
@@ -159,7 +159,7 @@ const Work = () => {
       {/* --------------------------LEFT card start-------------------------  */}
       <div className="mywork-wrapper">
         <div className="card-container" id="card3">
-          <div className="card-outline CardOutlineThree">
+          <div className="card-outline CardOutlineThree"  id="card-outline3">
             <motion.img src={grocer} className="grocer" alt="grocer"
             animate={{translateY:
               [1, -400, -1000, 1]}}
@@ -198,7 +198,7 @@ const Work = () => {
       {/* --------------------------LEFT card end-------------------------  */}
 
        {/* --------------------------RIGHT card start-------------------------  */}
-       <div className="mywork-wrapper">
+       <div className="mywork-wrapper" id="right-card">
         <div className="description-container DesContainerTwo"  id="des4">
           <p>Reveal Animation on Scroll
           </p>
@@ -218,7 +218,7 @@ const Work = () => {
           </button>
         </div>
         <div className="card-container" id="card4">
-          <div className="card-outline CardOutlineTwo">
+          <div className="card-outline CardOutlineTwo"  id="card-outline4">
             <motion.img src={uchiha} className="uchiha" alt="uchiha"
             animate={{translateY:
               [1, -320, -800 ,-1700, 1]}}
@@ -241,40 +241,6 @@ const Work = () => {
       {/* --------------------------Right card end-------------------------  */}
 
 
-      {/* --------------------------LEFT card start-------------------------  */}
-      {/* <div className="mywork-wrapper">
-        <div className="card-container">
-          <div className="card-outline CardOutlineThree">
-            <motion.img src={smart} className="wrihanshi" alt="smart"
-            animate={{translateY:
-              [1, -320, -730, 1]}}
-              transition={{
-                duration: 10,
-                ease: "easeInOut",
-               // times: [0, 0.2, 0.5, 0.8, 1],
-                loop: Infinity,
-                //repeatDelay: 1
-              }}
-              // onHoverStart={e => {
-              //   console.log("dada")
-              // }}
-            ></motion.img>
-          </div>
-          <h4 className="left-heading">Smart Home Care Service</h4>
-        </div>
-        <div className="description-container DesContainerThree">
-          <p>Business Website about Product Servicing.
-          </p>
-          <p>Skills used :</p>
-          <ul>
-            <li>Wordpress</li>
-          </ul>
-          <button
-          ><a href="https://smarthomecareservice.com/" target="#">Visit Page</a>
-          </button>
-        </div>
-      </div> */}
-      {/* --------------------------LEFT card end-------------------------  */}
     </section>
   );
 };

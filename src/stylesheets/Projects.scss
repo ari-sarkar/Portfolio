@@ -358,16 +358,20 @@ overflow: hidden;
 
 
 @media (max-width: 768px){
+  .projects-layout-container {
+    margin-top: 0rem;
+  }
   .projects-layout {
     width: 100vw;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
-    // grid-template-rows: 1fr 1fr;
-    // align-items: center;
-    // padding-bottom: 18px;
-    // padding-right: 18px;
-    // padding-left: 10px;
-    // overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 18px;
+    padding-right: 18px;
+    padding-left: 10px;
+    overflow: hidden;
   }
   .project-initial {
     width: 100%;

@@ -70,3 +70,18 @@ text-decoration: none;
   cursor: pointer;
   //transform: rotate(90deg);
 }
+@media (max-width: 768px){
+  .header {
+    width: 100%;
+    padding: 5px;
+  }
+  .navigation-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation-wrapper li {
+    width: auto;
+    font-size: 18px;
+    margin-left: 5px;
+  }
+}
