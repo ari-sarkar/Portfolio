@@ -19,7 +19,7 @@ const JSHeading=() =>{
         tl.fromTo(".textAnimate",{translateX:1500},{translateX:0, duration: 10})
     })
     return(
-        <div className="heading">
+        <div className="heading" id="projects">
             <h5 className="textAnimate">JAVASCRIPT PROJECTS</h5>
         </div>
     );

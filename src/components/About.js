@@ -22,7 +22,7 @@ const About = () => {
     tl.fromTo(".right p",{translateX: 900,},{translateX: 0, stagger: 1 ,ease: "Power2.easeOut", duration: 0.8},"-=0.5")
   })
   return (
-    <section className="About-wrapper">
+    <section className="About-wrapper" id="about">
       <div className="left-right-wrapper">
         <h2 className="about-me">
           About <span>Me</span>

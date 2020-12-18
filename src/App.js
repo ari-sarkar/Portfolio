@@ -4,10 +4,12 @@ import Work from "./components/Work";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import JSHeading from "./components/JSHeading";
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Navigation from "./components/Navigation";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 function App() {
   return (
     <Router>
+      <Navigation />
       <LandingPage />
       <About />
       <Work />
@@ -15,12 +17,14 @@ function App() {
       <Projects />
       <Contact />
       <Switch>
-      <Route path="#about-me" exact component={About}/>
-      {/* <Route path="#products" component={Products}/>
-      <Route path="#locate-us" component={Locate}/> */}
+        <Route path="#" exact component={LandingPage}></Route>
+        <Route path="/about" component={About}></Route>
+        <Route path="/work" component={Work}></Route>
+        <Route path="/projects" component={Projects}></Route>
+        {/* <Route path="/projects" component={JSHeading}></Route> */}
+        <Route path="/contact" component={Contact}></Route>
       </Switch>
     </Router>
-
   );
 }
 

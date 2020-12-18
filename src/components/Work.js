@@ -74,7 +74,7 @@ const Work = () => {
     
   })
   return (
-    <section className="Work">
+    <section className="Work" id="work">
       {/* --------------------------LEFT card start -------------------------  */}
       <div className="mywork-wrapper">
         <h2 className="mywork-heading">

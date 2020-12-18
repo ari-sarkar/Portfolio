@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../stylesheets/Navigation.scss";
+import { HashLink as Link } from 'react-router-hash-link';
 import gsap from "gsap";
-import { HashLink as Link} from "react-router-hash-link";
 const Navigation = () => {
   const [count, Setcount] = useState(true);
   useEffect(() => {
@@ -11,12 +11,13 @@ const Navigation = () => {
       { translateY: 0 },
       { translateY: -500, duration: 1, delay: 3 }
     );
-      tl.fromTo(
-        ".right-arrow",
-        {autoAlpha: 0, rotate: "0deg"},
-        {autoAlpha: 1, rotate: "90deg" ,duration: 1 }
-      ,"-=0.5");
-  },[]);
+    tl.fromTo(
+      ".right-arrow",
+      { autoAlpha: 0, rotate: "0deg" },
+      { autoAlpha: 1, rotate: "90deg", duration: 1 },
+      "-=0.5"
+    );
+  }, []);
   if (count === false) {
     gsap.to(".navigation-wrapper", {
       translateY: 0,
@@ -24,20 +25,24 @@ const Navigation = () => {
       ease: "Power4.easeOut",
     });
     gsap.to(".right-arrow", {
-        position: "absolute",
-        //translateY: 72,
-        rotate: "-90deg",
-        duration: 1,
-        ease: "Power4.easeOut",
-      });
-  }else{
-    gsap.fromTo(".navigation-wrapper", {
-      translateY: 0,
-    },{
-      translateY: -500,
+      position: "absolute",
+      //translateY: 72,
+      rotate: "-90deg",
       duration: 1,
       ease: "Power4.easeOut",
     });
+  } else {
+    gsap.fromTo(
+      ".navigation-wrapper",
+      {
+        translateY: 0,
+      },
+      {
+        translateY: -500,
+        duration: 1,
+        ease: "Power4.easeOut",
+      }
+    );
     gsap.to(".right-arrow", {
       translateY: 0,
       rotate: "90deg",
@@ -51,11 +56,22 @@ const Navigation = () => {
         className="navigation-wrapper"
         style={count ? {} : { translateX: "-10px" }}
       >
-        <Link smooth to="#about-me"  style={{textDecoration: 'none'}}><a href="./">About Me</a></Link>
+        <Link smooth to="#" className="link">
+        <li>Home</li>
+        </Link>
+        <Link smooth to="#about" className="link">
+        <li>About Me</li>
+        </Link>
+        <Link smooth to="#work" className="link">
+        <li>Work</li>
+        </Link>
+        <Link smooth to="#projects" className="link">
+        <li>Projects</li>
+        </Link>
+        <Link smooth to="#contact" className="link">
+        <li>Contact</li>
+        </Link>
         
-        <a href="./">Work</a>
-        <a href="./">Projects</a>
-        <a href="./">Contact</a>
       </div>
       <svg
         className="right-arrow"

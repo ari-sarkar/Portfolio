@@ -3,7 +3,7 @@ import "../stylesheets/LandingPage.scss";
 import webDev from "../Media/web-developer.svg";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
-import Navigation from "../components/Navigation";
+import { HashLink as Link } from 'react-router-hash-link';
 const LandingPage = () => {
   useEffect(() => {
     document.addEventListener("mousemove", paralax);
@@ -43,7 +43,6 @@ const LandingPage = () => {
   };
   return (
     <section className="landing-page-wrapper">
-      <Navigation />
       {/* LLLLLLLLLLLLLLLOOOOOOOOOOOOOOOOGGGGGGGGGGGGGGGGGOOOOOOOOOOOOOOOOOO */}
       <svg
         version="1.1"
@@ -207,7 +206,9 @@ const LandingPage = () => {
         className="layer"
         dataspeed="5"
       ></img>
+      <Link smooth to="#contact">
       <p className="hire-me">Hire Me</p>
+      </Link>
     </section>
   );
 };

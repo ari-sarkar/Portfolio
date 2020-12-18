@@ -1,6 +1,6 @@
 @import "../App.scss";
 .header {
-  //background-color: aqua;
+  //background-color: $bg-color;
   position: fixed;
   top: 0%;
   //bottom: 0;
@@ -20,7 +20,7 @@
   overflow: hidden;
   position: relative;
 }
-.navigation-wrapper a {
+.navigation-wrapper li {
   width: 100px;
   height: 60px;
   margin: auto;
@@ -34,12 +34,16 @@
   overflow: hidden;
   border-bottom: 1px solid rgb(70, 68, 68);
   transition: 0.5s ease-in-out;
+  list-style: none;
 }
-.navigation-wrapper a:hover {
+.navigation-wrapper li:hover {
   border-color: $color-two;
 }
-.navigation-wrapper a:active {
+.navigation-wrapper li:active {
   text-decoration: line-through;
+}
+.link{
+text-decoration: none;
 }
 .svg-icon {
   width: 5em;

@@ -58,7 +58,7 @@ const Contact = () => {
 //  console.log(document.getElementsByClassName("send-botton").style.marginTop) 
 // }
   return (
-    <section className="Contact">
+    <section className="Contact" id="contact">
       <div className="contact-form-wrapper">
         <h2 className="contact-heading">
           Contact <span> Me</span>
