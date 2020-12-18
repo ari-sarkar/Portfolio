@@ -134,20 +134,24 @@ overflow: hidden;
 }
 .social-media i{
   color: whitesmoke;
+  cursor: pointer;
+  font-size: 3rem;
 }
 // POP UP STYLES
 .popup-content {
   margin: auto;
   //background: rgb(255, 255, 255);
-  width: 50%;
-  padding: 5px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5em;
 }
 .popup-arrow {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255,0);
 }
 [role='tooltip'].popup-content {
-  width: 200px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+  width: 450px;
+  height: 45px;
 }
 
 .popup-overlay {
@@ -156,7 +160,10 @@ overflow: hidden;
 [data-popup='tooltip'].popup-overlay {
   background: transparent;
 }
-
+.social-media > a{
+  text-decoration: none;
+  overflow: hidden;
+}
 @media (max-width: 768px){
   .contact-form-wrapper{
     width: 100%;

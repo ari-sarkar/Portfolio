@@ -191,7 +191,7 @@ const Work = () => {
             <li>Responsvie Design</li>
           </ul>
           <button
-          ><a href="https://smarthomecareservice.com/" target="#">Visit Page</a>
+          ><a href="./" target="#">Visit Page</a>
           </button>
         </div>
       </div>
@@ -214,7 +214,7 @@ const Work = () => {
             <li>PHOTOSHOP</li>
           </ul>
           <button
-          ><a href="https://smarthomecareservice.com/" target="#">Visit Page</a>
+          ><a href="./" target="#">Visit Page</a>
           </button>
         </div>
         <div className="card-container" id="card4">

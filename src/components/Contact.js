@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../stylesheets/Contact.scss";
 import emailjs from "emailjs-com";
-// import Popup from "reactjs-popup";
+import Popup from "reactjs-popup";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -54,9 +54,9 @@ const Contact = () => {
   const [count, SetCount] = useState(0);
   const [count1, SetCount1] = useState(0);
   const [count2, SetCount2] = useState(0);
-// if(count >0 && count1 >=0 && count2 >=0){
-//  console.log(document.getElementsByClassName("send-botton").style.marginTop) 
-// }
+  // if(count >0 && count1 >=0 && count2 >=0){
+  //  console.log(document.getElementsByClassName("send-botton").style.marginTop)
+  // }
   return (
     <section className="Contact" id="contact">
       <div className="contact-form-wrapper">
@@ -88,20 +88,32 @@ const Contact = () => {
             onChange={() => SetCount2(count2 + 1)}
             required
           ></input>
-              <button
-                className="send-botton"
-                onClick={sendEmail}
-                type="submit"
-                value="Send"
-              >
-                Send
-              </button>
+          <button
+            className="send-botton"
+            onClick={sendEmail}
+            type="submit"
+            value="Send"
+          >
+            Send
+          </button>
         </form>
         <div className="social-media">
-          <i class="fab fa-linkedin fa-3x"></i>
-          <i class="fab fa-github-square fa-3x"></i>
-          <i class="fas fa-envelope fa-3x"></i>
-          <i class="fab fa-facebook-square fa-3x"></i>
+          <a
+            href="https://www.linkedin.com/in/arindam-sarkar-6169bb1b7/"
+            target="#"
+          >
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+          <a href="https://github.com/ari-sarkar" target="#">
+            <i class="fab fa-github-square fa-3x"></i>
+          </a>
+          <Popup trigger={<i class="fas fa-envelope fa-3x"></i>} position="top center">
+            <div>arisarkar.mail@gmail.com</div>
+          </Popup>
+          
+          <a href="https://www.facebook.com/sarkarari/" target="#">
+            <i class="fab fa-facebook-square fa-3x"></i>
+          </a>
         </div>
       </div>
     </section>

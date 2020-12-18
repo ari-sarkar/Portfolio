@@ -40,7 +40,7 @@ const About = () => {
           </Tilt>
 
           <p className="myName">Arindam Sarkar</p>
-          <p className="dob">D.O.B: 05-04-1995</p>
+          <p className="dob">arisarkar.mail@gmail.com</p>
         </div>
         <div className="right">
           <p>
