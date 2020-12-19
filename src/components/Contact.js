@@ -95,6 +95,8 @@ const Contact = () => {
             Send
           </button>
         </form>
+        <div className="text-social-wrapper">
+          <p>I would Love to hear from You</p>
         <div className="social-media">
           <a
             href="https://www.linkedin.com/in/arindam-sarkar-6169bb1b7/"
@@ -112,6 +114,7 @@ const Contact = () => {
           <a href="https://www.facebook.com/sarkarari/" target="#">
             <i class="fab fa-facebook-square fa-3x"></i>
           </a>
+        </div>
         </div>
       </div>
     </section>
