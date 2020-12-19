@@ -4,19 +4,21 @@ import webDev from "../Media/web-developer.svg";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { HashLink as Link } from 'react-router-hash-link';
+if(window.innerWidth > 768){
+  document.addEventListener("mousemove", paralax);
+  function paralax(e) {
+    this.querySelectorAll(".layer").forEach(layer => {
+      const speed = layer.getAttribute("dataspeed");
+
+      const x = (window.innerWidth - e.pageX * speed) / 100;
+      const y = (window.innerHeight - e.pageY * speed) / 100;
+
+      layer.style.transform = `translateX(${x}px) translatey(${y}px)`;
+    });
+  }
+}
 const LandingPage = () => {
   useEffect(() => {
-    document.addEventListener("mousemove", paralax);
-    function paralax(e) {
-      this.querySelectorAll(".layer").forEach(layer => {
-        const speed = layer.getAttribute("dataspeed");
-
-        const x = (window.innerWidth - e.pageX * speed) / 100;
-        const y = (window.innerHeight - e.pageY * speed) / 100;
-
-        layer.style.transform = `translateX(${x}px) translatey(${y}px)`;
-      });
-    }
     const tl = gsap.timeline({});
     tl.fromTo(
       "#frontEndDevText",

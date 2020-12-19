@@ -24,6 +24,11 @@ const Navigation = () => {
       duration: 1,
       ease: "Power4.easeOut",
     });
+    gsap.to(".navigation-wrapper li", {
+      backgroundColor: "rgba(42,42,44,0.9)",
+      duration: 1,
+      ease: "Power4.easeOut",
+    });
     gsap.to(".right-arrow", {
       position: "absolute",
       //translateY: 72,
