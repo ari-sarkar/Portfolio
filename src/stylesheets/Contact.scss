@@ -187,10 +187,23 @@ select:-webkit-autofill:focus {
     height: 70%;
     margin-top: 3rem;
   }
-  .social-media {
+  .text-social-wrapper {
     width: 100%;
     margin-top: 0rem;
     height: 10%;
+    //background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .text-social-wrapper p{
+    display: none;
+  }
+  .social-media {
+    width: 100%;
+    margin-top: 0rem;
+    height: auto;
     //background-color: wheat;
     display: flex;
     justify-content: space-around;
