@@ -32,6 +32,7 @@ const Contact = () => {
       "-=0.8"
     );
   }, []);
+
   function sendEmail(e) {
     e.preventDefault();
     emailjs
@@ -44,19 +45,15 @@ const Contact = () => {
       .then(
         result => {
           alert("Message Sent Sucessfully");
+          SetCount(0)
         },
         error => {
-          console.log(error.text);
+          alert(error.text);
         }
       );
     e.target.form.reset();
   }
   const [count, SetCount] = useState(0);
-  const [count1, SetCount1] = useState(0);
-  const [count2, SetCount2] = useState(0);
-  // if(count >0 && count1 >=0 && count2 >=0){
-  //  console.log(document.getElementsByClassName("send-botton").style.marginTop)
-  // }
   return (
     <section className="Contact" id="contact">
       <div className="contact-form-wrapper">
@@ -78,22 +75,23 @@ const Contact = () => {
             placeholder="E-Mail"
             name="e-mail"
             type="email"
-            onChange={() => SetCount1(count1 + 1)}
+            onChange={() => SetCount(count + 1)}
             required
           ></input>
           <input
             className="message"
             placeholder="Message"
             name="message"
-            onChange={() => SetCount2(count2 + 1)}
+            onChange={() => SetCount(count + 1)}
             required
           ></input>
           <button
             className="send-botton"
-            onClick={sendEmail}
+            onClick={count > 10 ? sendEmail : ""}
             type="submit"
             value="Send"
           >
+            {console.log(count)}
             Send
           </button>
         </form>
