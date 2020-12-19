@@ -191,7 +191,7 @@ const Work = () => {
             <li>Responsvie Design</li>
           </ul>
           <button
-          ><a href="./" target="#">Visit Page</a>
+          ><a href="https://elastic-borg-ab13f7.netlify.app/" target="#">Visit Page</a>
           </button>
         </div>
       </div>
@@ -214,7 +214,7 @@ const Work = () => {
             <li>PHOTOSHOP</li>
           </ul>
           <button
-          ><a href="./" target="#">Visit Page</a>
+          ><a href=" https://angry-elion-1e041e.netlify.app" target="#">Visit Page</a>
           </button>
         </div>
         <div className="card-container" id="card4">
