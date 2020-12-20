@@ -26,7 +26,7 @@ const Contact = () => {
       { translateX: 0, duration: 1, ease: "Power2.easeOut" }
     );
     tl.fromTo(
-      ". text-social-wrapper p",
+      ".text-social-wrapper p",
       { autoAlpha: 0 },
       { autoAlpha: 1, duration: 1, ease: "Power2.easeOut" },"-=0.7"
     );
@@ -101,7 +101,7 @@ const Contact = () => {
           </button>
         </form>
         <div className="text-social-wrapper">
-          <p>I would Love to hear from You</p>
+          <p className="contact-sec-text">I would Love to hear from You</p>
         <div className="social-media">
           <a
             href="https://www.linkedin.com/in/arindam-sarkar-6169bb1b7/"
