@@ -26,13 +26,18 @@ const Contact = () => {
       { translateX: 0, duration: 1, ease: "Power2.easeOut" }
     );
     tl.fromTo(
+      ". text-social-wrapper p",
+      { autoAlpha: 0 },
+      { autoAlpha: 1, duration: 1, ease: "Power2.easeOut" },"-=0.7"
+    );
+    tl.fromTo(
       ".social-media i",
       { translateY: 500 },
       { translateY: 0, duration: 1, ease: "Power2.easeOut", stagger: 0.3 },
       "-=0.8"
     );
   }, []);
-
+ 
   function sendEmail(e) {
     e.preventDefault();
     emailjs
