@@ -104,7 +104,7 @@ const Contact = () => {
           <p className="contact-sec-text">I would Love to hear from You</p>
         <div className="social-media">
           <a
-            href="https://www.linkedin.com/in/arindam-sarkar-6169bb1b7/"
+            href="www.linkedin.com/in/arindam-sarkar-arindamsarkar-tech-6169bb1b7"
             target="#"
           >
             <i class="fab fa-linkedin fa-3x"></i>
