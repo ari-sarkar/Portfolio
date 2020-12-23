@@ -187,7 +187,7 @@ const Projects = props => {
           className={count === 0 ? "projects-wrapper-hide" : "projects-wrapper"}
         >
           <div className="back-btn" onClick={() => Setcount(count - 1)}>
-            <svg class="svg-icon" viewBox="0 0 20 20">
+            <svg className="svg-icon" viewBox="0 0 20 20">
               <path
                 fill="none"
                 d="M18.271,9.212H3.615l4.184-4.184c0.306-0.306,0.306-0.801,0-1.107c-0.306-0.306-0.801-0.306-1.107,0
