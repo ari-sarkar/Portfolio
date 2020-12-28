@@ -6,7 +6,13 @@ import Contact from "./components/Contact";
 import JSHeading from "./components/JSHeading";
 import Navigation from "./components/Navigation";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import React, { useEffect } from "react"
+import ReactGa  from "react-ga"
 function App() {
+  useEffect(() => {
+    ReactGa.initialize('G-DH6V4D9ZWG')
+    ReactGa.pageview(window.location.pathname + window.location.search)
+  }, [])
   return (
     <Router>
       <Navigation />
