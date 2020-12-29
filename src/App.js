@@ -6,10 +6,10 @@ import Contact from "./components/Contact";
 import JSHeading from "./components/JSHeading";
 import Navigation from "./components/Navigation";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ReactGa from "react-ga";
+import ReactGA from "react-ga";
 function App() {
-  ReactGa.initialize("G-JNTZKQ6Q5X");
-  ReactGa.pageview(window.location.pathname + window.location.search);
+  ReactGA.initialize('G-JNTZKQ6Q5X');
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <Router>
       <Navigation />
