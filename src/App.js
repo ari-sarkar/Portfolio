@@ -8,7 +8,7 @@ import Navigation from "./components/Navigation";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ReactGa from "react-ga";
 function App() {
-  ReactGa.initialize("G-DH6V4D9ZWG");
+  ReactGa.initialize("G-JNTZKQ6Q5X");
   ReactGa.pageview(window.location.pathname + window.location.search);
   return (
     <Router>
